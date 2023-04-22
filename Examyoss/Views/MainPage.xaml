@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Examyoss.MainPage">
+
+    <ScrollView>
+        <StackLayout
+            Padding="15">
+            <Frame 
+                CornerRadius= "5" 
+                BackgroundColor="#B5E2FA" 
+                Padding="0"
+                Margin="0, 0, 0, 10">
+                <Image 
+                    x:Name="UbiImagen" 
+                    HeightRequest="300" 
+                    BackgroundColor="#B5E2FA" 
+                    Aspect="Fill" />
+            </Frame>
+            <Button 
+                x:Name="foto" 
+                Text="Tomar Fotografia" 
+                FontAttributes="Bold"  
+                BackgroundColor="#2196f3" 
+                CornerRadius="5" 
+                FontSize="15" 
+                TextColor="White" 
+                Clicked="foto_Clicked"
+                Margin="0, 0, 0, 20" />
+
+            <StackLayout
+                Margin="0, 0, 0, 20">
+                <Label
+                    Text="Descripción"
+                    FontSize="17"
+                    TextColor="Gray"/>
+                <Entry
+                    x:Name="descripcion"  
+                    Placeholder="Escriba la descripción del sitio"/>
+            </StackLayout>
+
+            <Label 
+                x:Name="lblstatus" 
+                Text="¡No hay grabación!" 
+                HorizontalOptions="Center" 
+                FontSize="15"/>
+            <StackLayout 
+                Orientation="Horizontal" 
+                HorizontalOptions="Center">
+                <Label 
+                    x:Name="lblmin" 
+                    Text="00" 
+                    FontSize = "35"/>
+                <Label 
+                    Text=":" 
+                    FontSize = "35"/>
+                <Label 
+                    x:Name="lblseg" 
+                    Text="00" 
+                    FontSize = "35"/>
+            </StackLayout>
+
+            <Grid 
+                ColumnDefinitions="*,*"
+                Margin="0, 0, 0, 10">
+
+                <Button 
+                    x:Name="Grabar" 
+                    CornerRadius="5" 
+                    BackgroundColor="#2196f3" 
+                    Text="Grabar" 
+                    TextColor="White" 
+                    Clicked="Grabar_Clicked"/>
+
+                <Button 
+                    Grid.Column="1" 
+                    x:Name="btnDetener" 
+                    CornerRadius="5" 
+                    IsEnabled="False" 
+                    BackgroundColor="#2196f3" 
+                    TextColor="White"
+                    Text="Detener" 
+                    Clicked="btnDetener_Clicked"/>
+            </Grid>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button 
+                    x:Name="btnguardar" 
+                    Text="Guardar" 
+                    BackgroundColor="#2196f3"  
+                    CornerRadius="5" 
+                    FontSize="15"
+                    TextColor="White" 
+                    FontAttributes="Bold" 
+                    Clicked="btnguardar_Clicked" 
+                    Grid.Row="0"
+                    Grid.Column="0"/>
+
+                <Button 
+                    x:Name="btnlista" 
+                    Text="Lista"   
+                    BackgroundColor="#2196f3" 
+                    FontSize="15"  
+                    CornerRadius="5" 
+                    TextColor="White" 
+                    FontAttributes="Bold" 
+                    Grid.Row="0"
+                    Grid.Column="1"/>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+
+
+</ContentPage>

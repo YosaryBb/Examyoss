@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1093866502459",
+    "project_id": "examen-3parcial",
+    "storage_bucket": "examen-3parcial.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1093866502459:android:2a7b528ccf7645dfd4df1e",
+        "android_client_info": {
+          "package_name": "com.companyname.examyoss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1093866502459-lkmmdp3uhrbia8hjragohapmk3oh0jnv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmE9sykyxBS5sWsmO4VeiEvZEea7o-7EY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1093866502459-lkmmdp3uhrbia8hjragohapmk3oh0jnv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
